@@ -102,13 +102,16 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 13%;
+  margin: 0 5%;
 }
 
 .home-content {
-  max-width: 40rem;
+  max-width: 100vw;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
 }
 
 .home-content::before {
@@ -127,9 +130,6 @@ h1 {
   color: #ffffff;
   font-size: 4.5rem;
   line-height: 1.2;
-  z-index: 1;
-  overflow: hidden;
-  transition: .5s;
 }
 
 h3 {
@@ -146,18 +146,28 @@ p {
   margin: 1.5rem 0 0.5rem 0;
 }
 
-.home-img img {
-  object-fit: cover;
-  width: 100%;
-  height: 30vw;
-}
-
 .tech-stack {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40rem;
+  width: 50rem;
   margin: 5rem 0;
+  z-index: 1;
+  transition: .5s;
+  padding: 0 20%;
+}
+
+.tech-stack::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b061f;
+  animation: showRight 2.5s ease forwards;
+  animation-delay: 4s;
 }
 
 .tech-stack h3 {
@@ -166,7 +176,7 @@ p {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 300;
-  margin-right: 3.5rem;
+  margin-right: 2.5rem;
 }
 
 .tech-stack i {
@@ -228,8 +238,8 @@ p {
   width: 100%;
   height: 100%;
   background: #0b061f;
-  animation: showUp 2s ease forwards;
-  animation-delay: 3s;
+  animation: showUp 3s ease forwards;
+  animation-delay: 6s;
 }
 
 .social-media a:hover {
@@ -248,10 +258,6 @@ p {
   background: #0b061f;
 }
 
-.about-img img {
-  width: 10vw;
-}
-
 .about-content {
   max-width: 50rem;
 }
@@ -263,13 +269,15 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20rem;
   background: #0b061f;
+}
+
+.portfolio-title {
+  margin-bottom: 50px;
 }
 
 .wrapper {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,7 +285,7 @@ p {
 
 .container {
   width: 100%;
-  height: 400px;
+  height: 350px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -381,8 +389,9 @@ input:checked + label .description {
   .card > .row {
     flex-direction: column;
   }
-  .card > .row > .icon-1, .icon-2, .icon-3 {
-    width: 10px;
+  .card > .row > .icon {
+    width: 30px;
+    height: 30px;
   }
   .card {
     height: 50px;
