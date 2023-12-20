@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -17,7 +16,6 @@ html {
 
 body {
   background: #0b061f;
-  font-family: 'Raleway', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -273,6 +271,7 @@ p {
 }
 
 .portfolio-title {
+  position: relative;
   margin-bottom: 50px;
 }
 
@@ -372,7 +371,7 @@ input:checked + label .description {
   }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 600px) {
   .wrapper {
     margin-top: 50px;
     justify-content: center;
