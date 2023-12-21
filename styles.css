@@ -85,10 +85,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
 }
 
 .home-img img {
-  width: 30vw;
+  width: 20vw;
 }
 
 .home-content h1 {
@@ -182,17 +183,21 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
   background: var(--bg-color);
 }
 
 .about-img img {
-  width: 30vw;
+  width: 20vw;
 }
 
 .heading {
   text-align: center;
   font-size: 5rem;
+}
+
+.about-content {
+  width: 50rem;
 }
 
 .about-content h1 {
@@ -230,7 +235,6 @@ section {
 }
 
 .container {
-  width: 100%;
   height: 350px;
   display: flex;
   flex-wrap: nowrap;
@@ -285,11 +289,9 @@ section {
 .description p {
   color: #ffffff;
   padding-top: 5px;
-  margin: 0 0;
 }
 
 .description h4 {
-  margin: 0;
   text-transform: uppercase;
 }
 
@@ -304,6 +306,22 @@ input:checked + label {
 input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url("gorilla.jpeg");
+}
+
+.card[for="c2"] {
+  background-image: url("spaceman.jpeg");
+}
+
+.card[for="c3"] {
+  background-image: url("data.jpeg");
+}
+
+.card[for="c4"] {
+  background-image: url("snowcouple.jpeg");
 }
 
 @keyframes showRight {
