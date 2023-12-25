@@ -240,7 +240,7 @@ section {
 }
 
 .container {
-  height: 350px;
+  height: 60vh;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -248,7 +248,7 @@ section {
 }
 
 .card {
-  width: 80px;
+  width: 8rem;
   border-radius: .95rem;
   background-size: cover;
   cursor: pointer;
@@ -271,11 +271,12 @@ section {
   background: #000000;
   color: white;
   border-radius: 50%;
-  width: 50px;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 1.5rem;
 }
 
 .card > .row > .description {
