@@ -56,6 +56,11 @@ section {
   z-index: 100;
 }
 
+.header.sticky {
+  box-shadow: 0 0 .5rem var(--theme-color);
+  transition: .5s;
+}
+
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
@@ -295,7 +300,7 @@ section {
   text-transform: uppercase;
 }
 
-input {
+.container input {
   display: none;
 }
 
@@ -324,6 +329,65 @@ input:checked + label .description {
   background-image: url("snowcouple.jpeg");
 }
 
+.contact h1 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  background: var(--text-color);
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form .input-box:nth-of-type(2) input {
+  width: 100%;
+}
+
+.contact form textarea {
+  resize: none;
+  height: 15rem;
+}
+
+.contact form .btn {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+}
+
+.footer-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
 @keyframes showRight {
   100% {
     width: 0;
@@ -336,7 +400,24 @@ input:checked + label .description {
   }
 }
 
-@media (max-width: 600px) {
+/* ----------------------------- MOBILE VERSION ----------------------------- */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .wrapper {
     margin-top: 50px;
     justify-content: center;
