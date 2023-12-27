@@ -10,9 +10,8 @@
 }
 
 :root {
-  --bg-color: #0b061f;
-  --text-color: #ffffff;
-  --theme-color: #be3144;
+  --bg-color: #ffffff;
+  --text-color: #000000;
 }
 
 html {
@@ -21,7 +20,6 @@ html {
 }
 
 body {
-  background: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -34,11 +32,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #be3144;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
+  background-color: var(--text-color);    /* color of the scroll thumb */
 }
 
 section {
+  background-image: url(moon_light.png);
+  background-size: cover;
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
@@ -49,23 +48,10 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--bg-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   z-index: 100;
-}
-
-.header.sticky {
-  box-shadow: 0 0 .5rem var(--theme-color);
-  transition: .5s;
-}
-
-.logo {
-  font-size: 2.5rem;
-  color: var(--text-color);
-  font-weight: 600;
-  cursor: default;
 }
 
 .navbar a {
@@ -74,27 +60,35 @@ section {
   margin-left: 4rem;
   transition: .3s;
 }
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: none;
+  border: .2rem solid var(--text-color);
+  font-size: 1.6rem;
+  color: var(--text-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--theme-color);
+  color: var(--bg-color);
+  text-shadow: 0 0 20px var(--text-color);
 }
 
 #menu-icon {
   font-size: 3.6rem;
-  color: var(--theme-color);
+  color: var(--text-color);
   display: none;
 }
 
 .home {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   gap: 5rem;
-}
-
-.home-img img {
-  width: 20vw;
 }
 
 .home-content h1 {
@@ -104,8 +98,7 @@ section {
 }
 
 .home-content h3 {
-  font-family: 'Poppins', sans-serif;
-  color: var(--theme-color);
+  color: var(--text-color);
   font-size: 2.2rem;
   font-weight: 300;
 }
@@ -119,7 +112,7 @@ section {
 }
 
 .tech-stack h3 {
-  border-right: 0.12rem solid var(--theme-color);
+  border-right: 0.12rem solid var(--text-color);
   padding-right: 2rem;
   color: var(--text-color);
   font-size: 2rem;
@@ -135,25 +128,8 @@ section {
   height: 2rem;
   background: transparent;
   font-size: 4rem;
-  color: var(--theme-color);
+  color: var(--text-color);
   margin: 3rem 2.5rem 3rem 0;
-}
-
-.btn {
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  background: var(--theme-color);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--theme-color);
-  font-size: 1.6rem;
-  color: var(--bg-color);
-  letter-spacing: .1rem;
-  font-weight: 600;
-  transition: .5s ease;
-}
-
-.btn:hover {
-  box-shadow: none;
 }
 
 .social-media {
@@ -171,17 +147,16 @@ section {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: .2rem solid var(--theme-color);
-  border-radius: 50%;
+  border: .2rem solid var(--text-color);
   font-size: 2rem;
-  color: var(--theme-color);
+  color: var(--text-color);
   transition: .4s;
 }
 
 .social-media a:hover {
-  background:var(--theme-color);
+  background:var(--text-color);
   color:var(--bg-color);
-  box-shadow: 0 0 20px var(--theme-color);
+  box-shadow: 0 0 20px var(--bg-color);
 }
 
 .about {
@@ -189,7 +164,6 @@ section {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  background: var(--bg-color);
 }
 
 .about-img img {
@@ -211,21 +185,16 @@ section {
 }
 
 .about-content h3 {
-  font-family: 'Poppins', sans-serif;
   font-size: 2.2rem;
-  color: var(--theme-color);
+  color: var(--text-color);
   font-weight: 300;
 }
 
 .about-content p {
   font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   color: var(--text-color);
   margin-top: 2rem; 
-}
-
-.portfolio {
-  background: #0b061f;
 }
 
 .portfolio h1 {
@@ -351,10 +320,9 @@ input:checked + label .description {
 .contact form textarea {
   width: 100%;
   padding: 1.5rem;
-  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
-  color: var(--bg-color);
-  background: var(--text-color);
+  color: var(--text-color);
+  background: var(--bg-color);
   margin: 0.7rem 0;
 }
 
@@ -376,17 +344,9 @@ input:checked + label .description {
   cursor: pointer;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem 9%;
-}
-
-.footer-text p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
+.contact form .btn:hover {
+  color: var(--bg-color);
+  text-shadow: 0 0 20px var(--text-color);
 }
 
 @keyframes showRight {
