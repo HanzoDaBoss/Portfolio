@@ -20,7 +20,15 @@ html {
 }
 
 body {
+  background-image: url(moon_light.png);
+  background-size: cover;
   color: var(--text-color);
+  transition: .5s;
+}
+
+.dark-mode {
+  background-image: url(moon_darkv2.png);
+  color: var(--bg-color);
 }
 
 body::-webkit-scrollbar {
@@ -36,8 +44,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  background-image: url(moon_light.png);
-  background-size: cover;
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
@@ -60,6 +66,7 @@ section {
   margin-left: 4rem;
   transition: .3s;
 }
+
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
@@ -78,17 +85,20 @@ section {
   text-shadow: 0 0 20px var(--text-color);
 }
 
+.navbar .btn:hover {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  text-shadow: none;
+}
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
 }
 
-.home {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 5rem;
+.home-content {
+  text-align: end;
 }
 
 .home-content h1 {
@@ -107,6 +117,7 @@ section {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: end;
   width: 100%;
   margin-top: 2rem;
 }
@@ -129,15 +140,12 @@ section {
   background: transparent;
   font-size: 4rem;
   color: var(--text-color);
-  margin: 3rem 2.5rem 3rem 0;
+  margin: 3rem 0rem 3rem 2.5rem;
 }
 
 .social-media {
   position: absolute;
-  bottom: 40px;
-  width: 100px;
-  display: flex;
-  justify-content: space-between;
+  bottom: 3rem;
 }
 
 .social-media a {
@@ -150,24 +158,13 @@ section {
   border: .2rem solid var(--text-color);
   font-size: 2rem;
   color: var(--text-color);
+  margin-left: 2.5rem;
   transition: .4s;
 }
 
 .social-media a:hover {
   background:var(--text-color);
   color:var(--bg-color);
-  box-shadow: 0 0 20px var(--bg-color);
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-}
-
-.about-img img {
-  width: 20vw;
 }
 
 .heading {
@@ -191,8 +188,8 @@ section {
 }
 
 .about-content p {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 300;
   color: var(--text-color);
   margin-top: 2rem; 
 }
