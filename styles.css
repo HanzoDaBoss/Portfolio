@@ -346,6 +346,7 @@ input:checked + label .description {
 .contact form textarea {
   resize: none;
   height: 15rem;
+  color: var(--text-color);
 }
 
 .contact form .btn {
