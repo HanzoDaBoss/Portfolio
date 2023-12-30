@@ -14,22 +14,23 @@
   --text-color: #000000;
 }
 
+.dark-mode {
+  --bg-color:#000000;
+  --text-color: #ffffff;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
 
 body {
-  background-image: url(moon_light.png);
-  background-size: cover;
+  background-color: var(--bg-color);
   color: var(--text-color);
   transition: .5s;
 }
 
-.dark-mode {
-  background-image: url(moon_darkv2.png);
-  color: var(--bg-color);
-}
+
 
 body::-webkit-scrollbar {
   width: 0.5rem;               /* width of the entire scrollbar */
@@ -64,10 +65,11 @@ section {
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
-  transition: .3s;
+  transition: .1s;
 }
 
 .btn {
+  color: var(--text-color);
   display: inline-block;
   padding: 1rem 2.8rem;
   background: none;
@@ -75,13 +77,12 @@ section {
   font-size: 1.6rem;
   letter-spacing: .1rem;
   font-weight: 600;
-  transition: .5s ease;
+  transition: .1s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--bg-color);
-  text-shadow: 0 0 20px var(--text-color);
+  border-bottom: .2rem solid var(--text-color);
 }
 
 .navbar .btn:hover {
@@ -209,6 +210,7 @@ section {
 
 .card {
   width: 8rem;
+  border: .2rem solid var(--text-color);
   border-radius: .95rem;
   background-size: cover;
   cursor: pointer;
@@ -313,10 +315,12 @@ input:checked + label .description {
   padding: 1.5rem;
   font-size: 1.6rem;
   background: var(--bg-color);
+  border: .2rem solid var(--text-color);
   margin: 0.7rem 0;
 }
 
 .contact form .input-box input {
+  color: var(--text-color);
   width: 49%;
 }
 

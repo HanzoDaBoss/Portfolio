@@ -17,7 +17,9 @@ window.onscroll = () => {
         };
     });
 };
-function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+
+const cv = document.getElementById("cv");
+
+cv.onclick = function darkMode() {
+    document.body.classList.toggle("dark-mode");
  }
