@@ -18,8 +18,14 @@ window.onscroll = () => {
     });
 };
 
-const cv = document.getElementById("cv");
+const icon = document.getElementById("dm-icon");
 
-cv.onclick = function darkMode() {
+icon.onclick = function darkMode() {
     document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+        icon.firstChild.className = "bx bx-sun";
+    }
+    else {
+        icon.firstChild.className = "bx bxs-moon";
+    }
  }

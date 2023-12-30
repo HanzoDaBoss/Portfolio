@@ -91,6 +91,21 @@ section {
   text-shadow: none;
 }
 
+.dm-icon {
+  color: var(--text-color);
+  display: inline-block;
+  margin: 1rem 2.8rem;
+  background: none;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .1s ease;
+}
+
+.dm-icon:hover {
+  cursor: pointer;
+}
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(--text-color);
