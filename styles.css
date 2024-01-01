@@ -191,7 +191,7 @@ section {
 
 .about {
   position: absolute;
-  top: 2rem;
+  top: 0;
   z-index: 2;
 }
 
@@ -213,6 +213,12 @@ section {
   font-size: 2rem;
   font-weight: 300;
   margin-top: 2rem; 
+}
+
+.portfolio {
+  position: absolute;
+  top: 0;
+  z-index: 3;
 }
 
 .portfolio h1 {
@@ -318,8 +324,10 @@ input:checked + label .description {
   background-image: url("snowcouple.jpeg");
 }
 
-.contact h1 {
-  margin-bottom: 3rem;
+.contact {
+  position: absolute;
+  top: 0;
+  z-index: 4;
 }
 
 .contact form {
