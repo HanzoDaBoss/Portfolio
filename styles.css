@@ -96,7 +96,7 @@ section {
   display: inline-block;
   margin: 1rem 2.8rem;
   background: none;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: .1rem;
   font-weight: 600;
   transition: .1s ease;
@@ -112,8 +112,13 @@ section {
   display: none;
 }
 
+.home {
+  z-index: 1;
+}
+
 .home-content {
   text-align: end;
+  margin-bottom: 10rem;
 }
 
 .home-content h1 {
@@ -182,6 +187,12 @@ section {
 .heading {
   text-align: center;
   font-size: 5rem;
+}
+
+.about {
+  position: absolute;
+  top: 2rem;
+  z-index: 2;
 }
 
 .about-content {
