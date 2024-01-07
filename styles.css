@@ -30,8 +30,6 @@ body {
   transition: .5s;
 }
 
-
-
 body::-webkit-scrollbar {
   width: 0.5rem;               /* width of the entire scrollbar */
 }
@@ -46,7 +44,7 @@ body::-webkit-scrollbar-thumb {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 10rem 5% 2rem;
 }
 
 .header {
@@ -384,7 +382,7 @@ input:checked + label .description {
 
 .contact form .btn:hover {
   color: var(--bg-color);
-  text-shadow: 0 0 20px var(--text-color);
+  background-color: var(--text-color);
 }
 
 @keyframes showRight {
