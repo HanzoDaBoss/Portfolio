@@ -75,7 +75,7 @@ section {
   font-size: 1.6rem;
   letter-spacing: .1rem;
   font-weight: 600;
-  transition: .5s ease;
+  transition: .1s ease;
 }
 
 .navbar a:hover,
