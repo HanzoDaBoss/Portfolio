@@ -63,7 +63,7 @@ section {
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
-  transition: .1s;
+  transition: .5s;
 }
 
 .btn {
