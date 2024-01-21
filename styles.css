@@ -161,6 +161,7 @@ section {
 .social-media {
   position: absolute;
   bottom: 3rem;
+  z-index: 50;
 }
 
 .social-media a {
@@ -194,8 +195,6 @@ section {
   visibility: hidden;
   opacity:0;
   transition: visibility 0.3s linear,opacity 0.3s linear;
-  background-color: black;
-  height: 20px;
 }
 
 .about-content {
