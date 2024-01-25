@@ -316,7 +316,7 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-  background-image: url("gorilla.jpeg");
+  background-image: url("palindrome.png");
 }
 
 .card[for="c2"] {
