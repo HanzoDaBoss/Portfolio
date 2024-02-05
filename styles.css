@@ -45,8 +45,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  min-height: 100vh;
-  padding: 10rem 5% 2rem;
+  height: 100vh;
 }
 
 .header {
@@ -161,7 +160,7 @@ section {
 }
 
 .social-media {
-  position: absolute;
+  position: fixed;
   bottom: 3rem;
   z-index: 50;
 }
