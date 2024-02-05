@@ -71,7 +71,7 @@ section {
 .btn {
   color: var(--text-color);
   display: inline-block;
-  padding: 1rem 2.8rem;
+  padding: 1rem 11px;
   background: none;
   border: .2rem solid var(--text-color);
   font-size: 1.6rem;
@@ -94,7 +94,7 @@ section {
 .dm-icon {
   color: var(--text-color);
   display: inline-block;
-  margin: 1rem 2.8rem;
+  margin: 1rem 2.2rem;
   background: none;
   font-size: 2rem;
   letter-spacing: .1rem;
@@ -203,11 +203,6 @@ section {
   width: 50rem;
 }
 
-.about-content h1 {
-  text-align: left;
-  line-height: 1.2;
-}
-
 .about-content h3 {
   font-size: 2.2rem;
   font-weight: 300;
@@ -228,19 +223,15 @@ section {
   transition: visibility 0.3s linear,opacity 0.3s linear;
 }
 
-.portfolio h1 {
-  margin-bottom: 4rem;
-}
-
 .wrapper {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
 .container {
   height: 50vh;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -250,7 +241,6 @@ section {
 .card {
   width: 6rem;
   border: .2rem solid var(--text-color);
-  border-radius: .95rem;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
@@ -277,7 +267,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0 0 0.8rem;
+  margin: 2.0rem 0 0 0.8rem;
 }
 
 .card > .row > .description {
@@ -391,21 +381,31 @@ input:checked + label .description {
 /* ----------------------------- MOBILE VERSION ----------------------------- */
 
 @media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
+  
 }
 
 @media only screen and (max-width: 991px) {
-  .header {
-    padding: 2rem 3%;
-  }
   section {
     padding: 10rem 3% 2rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+
+  .header {
+    width: 100%;
+    padding: 2rem 3px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-left: 1.5rem;
+  }
+
   .wrapper {
     margin-top: 50px;
     justify-content: center;
