@@ -412,7 +412,7 @@ input:checked + label .description {
     place-items: center;
   }
   .container {
-    height: 300px;
+    height: 310px;
     flex-direction:column;
     justify-content: center;
   }
@@ -429,7 +429,7 @@ input:checked + label .description {
     height: 30px;
   }
   .card {
-    height: 50px;
+    height: 100px;
   }
   .card > .row > .description {
     height: 50px;
