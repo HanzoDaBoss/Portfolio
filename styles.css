@@ -30,23 +30,11 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: .5s;
-  width: 100%;
-}
 
-body::-webkit-scrollbar {
-  width: 0.5rem;               /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: transparent;        /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--text-color);    /* color of the scroll thumb */
 }
 
 section {
-  height: 100vh;
+  
 }
 
 .header {
@@ -112,12 +100,17 @@ section {
   display: none;
 }
 
+/* ----------------------------- HOME SECTION ----------------------------- */
+
 .home {
   z-index: 1;
 }
 
 .home-content {
+  position: absolute;
   text-align: end;
+  top: 15%;
+  right: 5%;
   margin-bottom: 10rem;
 }
 
@@ -190,6 +183,8 @@ section {
   font-size: 5rem;
 }
 
+/* ----------------------------- ABOUT SECTION ----------------------------- */
+
 .about {
   position: absolute;
   top: 0;
@@ -213,6 +208,8 @@ section {
   font-weight: 300;
   margin-top: 2rem; 
 }
+
+/* ----------------------------- PORTFOLIO SECTION ----------------------------- */
 
 .portfolio {
   position: absolute;
@@ -250,6 +247,10 @@ section {
   align-items: flex-end;
   transition: .6s cubic-bezier(.28,-0.03,0,.99);
   box-shadow: 0px 10px 30px -5px #000000;
+}
+
+label:last-of-type {
+  margin-right: 0;
 }
 
 .card > .row {
@@ -320,6 +321,8 @@ input:checked + label .description {
 .card[for="c4"] {
   background-image: url("snowcouple.jpeg");
 }
+
+/* ----------------------------- CONTACT SECTION ----------------------------- */
 
 .contact {
   position: absolute;
@@ -406,7 +409,7 @@ input:checked + label .description {
   }
   
   .wrapper {
-    margin-top: 200px;
+    margin-top: 250px;
     justify-content: center;
   }
   .container {
@@ -417,7 +420,7 @@ input:checked + label .description {
   .card {
     width: 400px;
     align-items: flex-start;
-    margin: 10px;
+    margin-bottom: 10px;
   }
   .card > .row {
     flex-direction: column;
