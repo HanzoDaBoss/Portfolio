@@ -187,7 +187,8 @@ section {
 
 .about {
   position: absolute;
-  top: 0;
+  top: 20%;
+  left: 5%;
   z-index: 2;
   visibility: hidden;
   opacity:0;
@@ -213,7 +214,8 @@ section {
 
 .portfolio {
   position: absolute;
-  top: 0;
+  top: 20%;
+  left: 3%;
   z-index: 3;
   visibility: hidden;
   opacity:0;
@@ -326,7 +328,8 @@ input:checked + label .description {
 
 .contact {
   position: absolute;
-  top: 0;
+  top: 20%;
+  left: 5%;
   z-index: 4;
   visibility: hidden;
   opacity:0;
@@ -393,9 +396,6 @@ input:checked + label .description {
     font-size: 45%;
   }
 
-  body {
-   
-  }
 
   .header {
     width: 100%;
@@ -409,7 +409,6 @@ input:checked + label .description {
   }
   
   .wrapper {
-    margin-top: 250px;
     justify-content: center;
   }
   .container {
