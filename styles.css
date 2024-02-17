@@ -286,7 +286,7 @@ body {
 }
 
 input:checked + label {
-  width: 500px;
+  width: 40vw;
 }
 
 input:checked + label .description {
