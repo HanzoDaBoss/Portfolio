@@ -30,6 +30,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: .5s;
+  width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -384,8 +385,13 @@ input:checked + label .description {
 }
 
 @media only screen and (max-width: 600px) {
+  
   html {
     font-size: 45%;
+  }
+
+  body {
+   
   }
 
   .header {
@@ -398,19 +404,20 @@ input:checked + label .description {
   .navbar a {
     margin-left: 1.5rem;
   }
-
+  
   .wrapper {
-    margin-top: 50px;
+    margin-top: 200px;
     justify-content: center;
   }
   .container {
-    height: 1200px;
+    height: 400px;
     flex-direction:column;
     justify-content: center;
   }
   .card {
     width: 400px;
     align-items: flex-start;
+    margin: 10px;
   }
   .card > .row {
     flex-direction: column;
@@ -423,8 +430,8 @@ input:checked + label .description {
     height: 50px;
   }
   .card > .row > .description {
-    height: 500px;
-    width: 400px;
+    height: 50px;
+    width: 200px;
   }
   input:checked + label {
     height:600px;
