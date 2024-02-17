@@ -33,10 +33,6 @@ body {
 
 }
 
-section {
-  
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -197,6 +193,7 @@ section {
 
 .about-content {
   width: 50rem;
+  text-align: justify;
 }
 
 .about-content h3 {
@@ -215,22 +212,15 @@ section {
 .portfolio {
   position: absolute;
   top: 20%;
-  left: 3%;
+  left: 5%;
   z-index: 3;
   visibility: hidden;
   opacity:0;
   transition: visibility 0.3s linear,opacity 0.3s linear;
 }
 
-.wrapper {
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
-
 .container {
   height: 50vh;
-  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -249,10 +239,6 @@ section {
   align-items: flex-end;
   transition: .6s cubic-bezier(.28,-0.03,0,.99);
   box-shadow: 0px 10px 30px -5px #000000;
-}
-
-label:last-of-type {
-  margin-right: 0;
 }
 
 .card > .row {
@@ -279,7 +265,7 @@ label:last-of-type {
   flex-direction: column;
   overflow: hidden;
   height: 80px;
-  width: 520px;
+  width: 220px;
   opacity: 0;
   transform: translateY(30px);
   transition-delay: .3s;
@@ -300,7 +286,7 @@ label:last-of-type {
 }
 
 input:checked + label {
-  width: 600px;
+  width: 500px;
 }
 
 input:checked + label .description {
@@ -403,22 +389,36 @@ input:checked + label .description {
     justify-content: center;
     align-items: center;
   }
-
   .navbar a {
     margin-left: 1.5rem;
   }
-  
-  .wrapper {
-    justify-content: center;
+
+  .about {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    display: grid;
+    place-items: center;
+  }
+  .about-content {
+    width: 80%;
+  }
+
+  .portfolio {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: grid;
+    place-items: center;
   }
   .container {
-    height: 400px;
+    height: 300px;
     flex-direction:column;
     justify-content: center;
   }
   .card {
-    width: 400px;
-    align-items: flex-start;
+    width: 350px;
+    align-items: flex-center;
     margin-bottom: 10px;
   }
   .card > .row {
@@ -437,6 +437,16 @@ input:checked + label .description {
   }
   input:checked + label {
     height:600px;
-    width: 400px;
+    width: 350px;
   }
+
+  .contact {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: grid;
+    place-items: center;
+    margin: 0 10%;
+  }
+  
 }
