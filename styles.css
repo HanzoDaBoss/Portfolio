@@ -299,7 +299,7 @@ input:checked + label .description {
 }
 
 .card[for="c2"] {
-  background-image: url("spaceman.jpeg");
+  background-image: url("roman.png");
 }
 
 .card[for="c3"] {
