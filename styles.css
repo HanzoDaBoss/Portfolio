@@ -272,13 +272,23 @@ body {
   transition: all .3s ease;
 }
 
-.description p {
+.description a {
+  width: 115px;
+}
+
+.description a:hover {
+  text-decoration: underline;
   color: #ffffff;
-  padding-top: 5px;
 }
 
 .description h4 {
+  color: #ffffff;
   text-transform: uppercase;
+}
+
+.description p {
+  color: #ffffff;
+  padding-top: 5px;
 }
 
 .container input {
