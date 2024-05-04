@@ -7,7 +7,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
-  
+
 }
 
 :root {
@@ -16,7 +16,7 @@
 }
 
 .dark-mode {
-  --bg-color:#000000;
+  --bg-color: #000000;
   --text-color: #ffffff;
 }
 
@@ -124,10 +124,11 @@ body {
 .tech-stack {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: end;
-  width: 100%;
-  margin-top: 2rem;
+  width: 30rem;
+  margin-top: 1rem;
 }
 
 .tech-stack h3 {
@@ -146,7 +147,7 @@ body {
   height: 2rem;
   background: transparent;
   font-size: 4rem;
-  margin: 3rem 0rem 3rem 2.5rem;
+  margin: 1.5rem -1rem 1.5rem 3.5rem;
 }
 
 .social-media {
@@ -187,8 +188,8 @@ body {
   left: 5%;
   z-index: 2;
   visibility: hidden;
-  opacity:0;
-  transition: visibility 0.3s linear,opacity 0.3s linear;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .about-content {
@@ -204,19 +205,20 @@ body {
 .about-content p {
   font-size: 2rem;
   font-weight: 300;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 /* ----------------------------- PORTFOLIO SECTION ----------------------------- */
 
 .portfolio {
+  /* width: 100%; */
   position: absolute;
   top: 20%;
   left: 5%;
   z-index: 3;
   visibility: hidden;
-  opacity:0;
-  transition: visibility 0.3s linear,opacity 0.3s linear;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .container {
@@ -237,17 +239,17 @@ body {
   margin: 0 10px;
   display: flex;
   align-items: flex-end;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  transition: .6s cubic-bezier(.28, -0.03, 0, .99);
   box-shadow: 0px 10px 30px -5px #000000;
 }
 
-.card > .row {
+.card>.row {
   color: white;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.card > .row > .icon {
+.card>.row>.icon {
   background: #000000;
   color: white;
   border-radius: 50%;
@@ -259,7 +261,7 @@ body {
   margin: 2.0rem 0 0 0.8rem;
 }
 
-.card > .row > .description {
+.card>.row>.description {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -295,11 +297,11 @@ body {
   display: none;
 }
 
-input:checked + label {
+input:checked+label {
   width: 40vw;
 }
 
-input:checked + label .description {
+input:checked+label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
@@ -328,8 +330,8 @@ input:checked + label .description {
   left: 5%;
   z-index: 4;
   visibility: hidden;
-  opacity:0;
-  transition: visibility 0.3s linear,opacity 0.3s linear;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .contact form {
@@ -382,12 +384,10 @@ input:checked + label .description {
 
 /* ----------------------------- MOBILE VERSION ----------------------------- */
 
-@media (max-width: 1200px) {
-  
-}
+@media (max-width: 1200px) {}
 
-@media only screen and (max-width: 600px) {
-  
+@media only screen and (max-width: 960px) {
+
   html {
     font-size: 45%;
   }
@@ -399,6 +399,7 @@ input:checked + label .description {
     justify-content: center;
     align-items: center;
   }
+
   .navbar a {
     margin-left: 1.5rem;
   }
@@ -410,53 +411,62 @@ input:checked + label .description {
     display: grid;
     place-items: center;
   }
+
   .about-content {
     width: 80%;
   }
 
   .portfolio {
+    width: 100%;
     position: absolute;
     top: 40%;
     left: 0;
     display: grid;
     place-items: center;
   }
+
   .container {
     height: 310px;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
   }
+
   .card {
     width: 350px;
     align-items: flex-center;
     margin-bottom: 10px;
   }
-  .card > .row {
+
+  .card>.row {
     flex-direction: column;
   }
-  .card > .row > .icon {
+
+  .card>.row>.icon {
     width: 30px;
     height: 30px;
   }
+
   .card {
     height: 100px;
   }
-  .card > .row > .description {
+
+  .card>.row>.description {
     height: 50px;
     width: 200px;
   }
-  input:checked + label {
-    height:600px;
+
+  input:checked+label {
+    height: 600px;
     width: 350px;
   }
 
   .contact {
+    width: 100%;
     position: absolute;
     top: 40%;
     left: 0;
     display: grid;
     place-items: center;
-    margin: 0 10%;
   }
-  
+
 }
