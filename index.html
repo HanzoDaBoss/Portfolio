@@ -1,122 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanif Uddin</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanif Uddin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-    <header class="header">
-      <i class='bx bx-menu' id="menu-icon"></i>
+<body>
 
-      <nav class="navbar" data-lastShown=''>
-        <a id="home-bar" href="#home" class="active">HOME</a>
-        <a id="about-bar" href="#about">ABOUT</a>
-        <a id="portfolio-bar" href="#portfolio">PORTFOLIO</a>
-        <a id="contact-bar" href="#contact">CONTACT</a>
-        <a href="Hanif Uddin CV.pdf" class="btn" target="_blank">CV</a>
-        <button href="" class="dm-icon" id="dm-icon"><i class='bx bxs-moon'></i></button>  
-      </nav>
+  <header class="header">
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-    </header>
+    <nav class="navbar" data-lastShown=''>
+      <a id="home-bar" href="#home" class="active">HOME</a>
+      <a id="about-bar" href="#about">ABOUT</a>
+      <a id="portfolio-bar" href="#portfolio">PORTFOLIO</a>
+      <a id="contact-bar" href="#contact">CONTACT</a>
+      <a href="Hanif Uddin CV.pdf" class="btn" target="_blank">CV</a>
+      <button href="" class="dm-icon" id="dm-icon"><i class='bx bxs-moon'></i></button>
+    </nav>
 
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hanif Uddin</h1>
-        <h3>Front-End Developer</h3>
-        <div class="tech-stack">
-          <h3>Tech stack</h3>
-          <i class='bx bxl-html5'></i>
-          <i class='bx bxl-css3' ></i>
-          <i class='bx bxl-javascript' ></i>
-        </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hanif Uddin</h1>
+      <h3>Full-Stack Developer</h3>
+      <div class="tech-stack">
+        <h3>Tech stack</h3>
+        <i class='bx bxl-html5'></i>
+        <i class='bx bxl-css3'></i>
+        <i class='bx bxl-javascript'></i>
+        <i class='bx bxl-nodejs'></i>
+        <i class='bx bxl-react'></i>
+        <i class='bx bxl-postgresql'></i>
       </div>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/hanif-uddin/" target = "_blank">
-            <i class='bx bxl-linkedin'></i>
-          </a>
-          <a href="https://github.com/HanzoDaBoss" target = "_blank">
-            <i class='bx bxl-github' ></i>
-          </a>
-        </div>
-    </section>
+    </div>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/hanif-uddin/" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/HanzoDaBoss" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-      <div class="about-content">
-        <h3>A self-taught front-end developer based in Rochester, UK.</h3>
-        <p>Dedicated to crafting immersive digital experiences. With a keen eye for design and a knack for turning ideas into intuitive interfaces, I specialize in creating responsive websites that blend creativity with functionality. I have gained proficiency in HTML, CSS and JavaScript.</p>
+  <section class="about" id="about">
+    <div class="about-content">
+      <h3>A self-taught front-end developer based in Rochester, UK.</h3>
+      <p>Dedicated to crafting immersive digital experiences. With a keen eye for design and a knack for turning ideas
+        into intuitive interfaces, I specialize in creating responsive websites that blend creativity with
+        functionality. I have gained proficiency in HTML, CSS and JavaScript.</p>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <input type="radio" name="slide" id="c1" checked>
+      <label for="c1" class="card">
+        <div class="row">
+          <div class="icon">1</div>
+          <div class="description">
+            <a href="https://hanif-palindrome.netlify.app" target="_blank">
+              <h4>Palindrome Checker</h4>
+            </a>
+            <p>*Insert description here*</p>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c2">
+      <label for="c2" class="card">
+        <div class="row">
+          <div class="icon">2</div>
+          <div class="description">
+            <a href="https://hanif-romannumeral.netlify.app" target="_blank">
+              <h4>Roman Numeral Converter</h4>
+            </a>
+            <p>*Insert description here*</p>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c3">
+      <label for="c3" class="card">
+        <div class="row">
+          <div class="icon">3</div>
+          <div class="description">
+            <h4>Cryptocurrency Site</h4>
+            <p>*Insert description here*</p>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c4">
+      <label for="c4" class="card">
+        <div class="row">
+          <div class="icon">4</div>
+          <div class="description">
+            <h4>Job Board</h4>
+            <p>*Insert description here*</p>
+          </div>
+        </div>
+      </label>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+
+    <form name="contact" method="POST" netlify>
+      <div class="input-box">
+        <input type="text" name="name" placeholder="First Name">
+        <input type="text" name="name" placeholder="Last Name">
       </div>
-    </section>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="Email">
+      </div>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message here"></textarea>
+      <button type="submit" class="btn">SEND</button>
+    </form>
+  </section>
 
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-          <input type="radio" name="slide" id="c1" checked>
-          <label for="c1" class="card">
-            <div class="row">
-              <div class="icon">1</div>
-              <div class="description">
-                <a href="https://hanif-palindrome.netlify.app" target="_blank"><h4>Palindrome Checker</h4></a>
-                <p>*Insert description here*</p>
-              </div>
-            </div>
-          </label>
-          <input type="radio" name="slide" id="c2">
-          <label for="c2" class="card">
-            <div class="row">
-              <div class="icon">2</div>
-              <div class="description">
-                <a href="https://hanif-romannumeral.netlify.app" target="_blank"><h4>Roman Numeral Converter</h4></a>
-                <p>*Insert description here*</p>
-              </div>
-            </div>
-          </label>
-          <input type="radio" name="slide" id="c3">
-          <label for="c3" class="card">
-            <div class="row">
-              <div class="icon">3</div>
-              <div class="description">
-                <h4>Cryptocurrency Site</h4>
-                <p>*Insert description here*</p>
-              </div>
-            </div>
-          </label>
-          <input type="radio" name="slide" id="c4">
-          <label for="c4" class="card">
-            <div class="row">
-              <div class="icon">4</div>
-              <div class="description">
-                <h4>Job Board</h4>
-                <p>*Insert description here*</p>
-              </div>
-            </div>
-          </label>
-        </div>
-    </section>
+  <script src="script.js"></script>
+</body>
 
-    <section class="contact" id="contact">
-
-      <form name="contact" method="POST" netlify>
-        <div class="input-box">
-          <input type="text" name="name" placeholder="First Name">
-          <input type="text" name="name" placeholder="Last Name">
-        </div>
-        <div class="input-box">
-          <input type="email" name="email" placeholder="Email">
-        </div>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message here"></textarea>
-        <button  type="submit" class="btn">SEND</button>
-      </form>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
-  
 </html>
