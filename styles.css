@@ -299,6 +299,7 @@ body {
 
 input:checked+label {
   width: 40vw;
+  box-shadow: inset 0 -70px 50px #000000;
 }
 
 input:checked+label .description {
@@ -307,11 +308,11 @@ input:checked+label .description {
 }
 
 .card[for="c1"] {
-  background-image: url("palindrome.png");
+  background-image: url("nc-news.png");
 }
 
 .card[for="c2"] {
-  background-image: url("roman.png");
+  background-image: url("tvshows.png");
 }
 
 .card[for="c3"] {
