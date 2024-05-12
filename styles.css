@@ -308,19 +308,15 @@ input:checked+label .description {
 }
 
 .card[for="c1"] {
-  background-image: url("nc-news.png");
+  background-image: url("nc-news-be.png");
 }
 
 .card[for="c2"] {
-  background-image: url("tvshows.png");
+  background-image: url("nc-news-fe.png");
 }
 
 .card[for="c3"] {
-  background-image: url("data.jpeg");
-}
-
-.card[for="c4"] {
-  background-image: url("snowcouple.jpeg");
+  background-image: url("tvshows.png");
 }
 
 /* ----------------------------- CONTACT SECTION ----------------------------- */
