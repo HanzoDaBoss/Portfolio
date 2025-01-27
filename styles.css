@@ -308,11 +308,11 @@ input:checked+label .description {
 }
 
 .card[for="c1"] {
-  background-image: url("medway-basketball-api.png");
+  background-image: url("events-platform.png");
 }
 
 .card[for="c2"] {
-  background-image: url("nc-news-fe.png");
+  background-image: url("medway-basketball.png");
 }
 
 .card[for="c3"] {
